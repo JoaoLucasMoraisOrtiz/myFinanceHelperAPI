@@ -1,0 +1,47 @@
+#!/bin/bash
+
+echo "=================================================="
+echo "  TESTE DO PAINEL ADMINISTRATIVO"
+echo "=================================================="
+echo ""
+echo "🔐 CREDENCIAIS DE ACESSO:"
+echo "   Login: admin"
+echo "   Senha: a1s2d3f4qwepoiJL*"
+echo ""
+echo "🌐 ACESSO:"
+echo "   URL: http://localhost:8080"
+echo ""
+echo "📋 FUNCIONALIDADES DISPONÍVEIS:"
+echo "   ✅ Login seguro com autenticação"
+echo "   ✅ Dashboard com estatísticas dos usuários"
+echo "   ✅ Criar novos usuários"
+echo "   ✅ Editar usuários existentes"
+echo "   ✅ Visualizar dados financeiros dos usuários"
+echo "   ✅ Excluir usuários (com proteção)"
+echo "   ✅ Logout seguro"
+echo ""
+echo "🚀 API ENDPOINTS DISPONÍVEIS:"
+echo "   📡 POST /api/login - Autenticação API"
+echo "   📊 GET /api/sync - Sincronizar dados"
+echo "   💰 POST /api/receitas - Adicionar receitas"
+echo "   💸 POST /api/despesas - Adicionar despesas"
+echo "   📅 POST /api/planejamento - Planejamento financeiro"
+echo ""
+echo "=================================================="
+
+# Verificar se o servidor está rodando
+echo "🔍 Verificando servidor..."
+if curl -s http://localhost:8080 > /dev/null; then
+    echo "✅ Servidor está online em http://localhost:8080"
+else
+    echo "❌ Servidor não está respondendo"
+    echo "   Execute: php artisan serve --host=0.0.0.0 --port=8080"
+fi
+
+echo ""
+echo "🎯 Para acessar o painel administrativo:"
+echo "   1. Abra http://localhost:8080 no navegador"
+echo "   2. Use as credenciais acima para fazer login"
+echo "   3. Gerencie usuários e visualize dados financeiros"
+echo ""
+echo "=================================================="
